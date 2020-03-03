@@ -1,3 +1,7 @@
+source('./Sigmoid.R')
+source('./Dropout.R')
+source('./Softmax.R')
+
 DeepDropout <- function(W1, W2, W3, W4, X, D) {
   alpha <- 0.01
 

@@ -1,3 +1,7 @@
+source('./DeepDropout.R')
+source('./Sigmoid.R')
+source('./Softmax.R')
+
 X <- list(
   matrix(c(
     0, 1, 1, 0, 0,

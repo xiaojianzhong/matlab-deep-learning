@@ -1,3 +1,6 @@
+source('./Sigmoid.R')
+source('./Softmax.R')
+
 MultiClass <- function(W1, W2, X, D) {
   alpha <- 0.9
 
