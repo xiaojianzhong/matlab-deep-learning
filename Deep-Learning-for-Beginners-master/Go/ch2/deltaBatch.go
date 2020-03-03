@@ -1,0 +1,37 @@
+package ch2
+
+import (
+	"github.com/azxj/matlab-deep-learning/Deep-Learning-for-Beginners-master/Go/utils"
+	"gonum.org/v1/gonum/mat"
+)
+
+func DeltaBatch(
+	ws *mat.VecDense, // 3-elem vector
+	xss *mat.Dense, // 4 x 3 matrix
+	ds *mat.VecDense, // 4-elem vector
+) {
+	alpha := 0.9 // scalar
+
+	dWSum := mat.NewVecDense(3, nil) // 3-elem vector
+
+	n := 4 // scalar
+	for k := 0; k < n; k++ {
+		xs := xss.RowView(k) // 3-elem vector
+		d := ds.AtVec(k) // scalar
+
+		v := mat.Dot(ws, xs) // scalar
+		y := utils.SigmoidFloat64(v) // scalar
+
+		e := d - y // scalar
+		delta := y * (1 - y) * e // scalar
+
+		dW := mat.NewVecDense(3, nil) // 3-elem vector
+		dW.ScaleVec(alpha * delta, xs)
+
+		dWSum.AddVec(dWSum, dW)
+	}
+	dWAvg := mat.NewVecDense(3, nil) // 3-elem vector
+	dWAvg.ScaleVec(1.0 / float64(n), dWSum)
+
+	ws.AddVec(ws, dWAvg)
+}

@@ -1,5 +1,6 @@
 .idea/
 vendor/
+result.png
 .Rhistory
 .Rapp.history
 .RData
