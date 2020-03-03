@@ -1,3 +1,7 @@
+source('./DeepReLU.R')
+source('./ReLU.R')
+source('./Softmax.R')
+
 X <- list(
   matrix(c(
     0, 1, 1, 0, 0,

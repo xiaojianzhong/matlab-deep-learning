@@ -1,3 +1,5 @@
+source('./Sigmoid.R')
+
 DeltaBatch <- function(W, X, D) {
   alpha <- 0.9
 

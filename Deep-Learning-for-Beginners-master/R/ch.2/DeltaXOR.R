@@ -1,3 +1,5 @@
+source('./Sigmoid.R')
+
 DeltaXOR <- function(W, X, D) {
   alpha <- 0.9
 
