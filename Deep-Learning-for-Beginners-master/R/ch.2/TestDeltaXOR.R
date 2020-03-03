@@ -7,9 +7,9 @@ X <- matrix(c(
 
 D <- c(
   0,
-  1
   1,
-  0,
+  1,
+  0
 )
 
 W <- matrix(runif(3, min=-1, max=1), nrow=1, ncol=3)
