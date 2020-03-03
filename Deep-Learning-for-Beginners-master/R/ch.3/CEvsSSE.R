@@ -11,9 +11,9 @@ X <- matrix(c(
 
 D <- c(
   0,
+  0,
   1,
-  1,
-  0
+  1
 )
 
 E1 <- vector(mode="numeric", length=1000)
