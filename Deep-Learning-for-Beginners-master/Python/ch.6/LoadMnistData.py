@@ -42,7 +42,7 @@ def LoadMnistData(imagefile, labelfile):
     for i in range(N):
         if i % 1000 == 0:
             print("i: %i" % i)
-            
+
         for row in range(rows):
             for col in range(cols):
                 tmp_pixel = images.read(1)  # Just a single byte

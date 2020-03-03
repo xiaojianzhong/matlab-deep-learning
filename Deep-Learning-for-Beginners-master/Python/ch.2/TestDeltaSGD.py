@@ -8,17 +8,17 @@ def TestDeltaSGD():
                   [0, 1, 1],
                   [1, 0, 1],
                   [1, 1, 1]])
-    
+
     D = np.array([[0],
                   [0],
                   [1],
                   [1]])
-        
+
     W = 2*np.random.random((1, 3)) - 1
-        
+
     for _epoch in range(10000):
         W = DeltaSGD(W, X, D)
-                
+
     N = 4
     for k in range(N):
         x = X[k,:].T

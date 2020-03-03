@@ -1,5 +1,5 @@
 clear all
-           
+
 X = [ 0 0 1;
       0 1 1;
       1 0 1;
@@ -29,11 +29,11 @@ for epoch = 1:1000           % train
   for k = 1:N
     x = X(k, :)';
     d = D(k);
-    
+
     v1  = W1*x;
     y1  = Sigmoid(v1);
     es1 = es1 + (d - y1)^2;
-    
+
     v2  = W2*x;
     y2  = Sigmoid(v2);
     es2 = es2 + (d - y2)^2;

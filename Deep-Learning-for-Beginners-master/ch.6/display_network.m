@@ -1,7 +1,7 @@
 function [h, array] = display_network(A, opt_normalize, opt_graycolor, cols, opt_colmajor)
 % This function visualizes filters in matrix A. Each column of A is a
 % filter. We will reshape each column into a square image and visualizes
-% on each cell of the visualization panel. 
+% on each cell of the visualization panel.
 % All other parameters are optional, usually you do not need to worry
 % about it.
 % opt_normalize: whether we need to normalize the filter so that all of
@@ -59,8 +59,8 @@ if ~opt_colmajor
     k=1;
     for i=1:m
         for j=1:n
-            if k>M, 
-                continue; 
+            if k>M,
+                continue;
             end
             clim=max(abs(A(:,k)));
             if opt_normalize
@@ -75,8 +75,8 @@ else
     k=1;
     for j=1:n
         for i=1:m
-            if k>M, 
-                continue; 
+            if k>M,
+                continue;
             end
             clim=max(abs(A(:,k)));
             if opt_normalize

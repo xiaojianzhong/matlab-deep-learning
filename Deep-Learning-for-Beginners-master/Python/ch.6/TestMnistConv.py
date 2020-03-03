@@ -19,12 +19,12 @@ Wo = np.random.uniform(-1, 1, ( 10,  100)) * np.sqrt(6) / np.sqrt( 10 +  100)
 
 X = Images[0:8000, :, :]
 D = Labels[0:8000]
-    
+
 for _epoch in range(3):
     print(_epoch)
     W1, W5, Wo = MnistConv(W1, W5, Wo, X, D)
 
-    
+
 # Test
 #
 X = Images[8000:10000, :, :]
@@ -43,11 +43,11 @@ for k  in range(N):
     y5 = ReLU(v5)
     v  = np.matmul(Wo, y5)
     y  = Softmax(v)
-    
+
     i = np.argmax(y)
     if i == D[k][0]:
         acc = acc + 1
-        
+
 acc = acc / N
 print("Accuracy is : ", acc)
 

@@ -23,26 +23,26 @@ W2 = np.array(W1)
 for epoch in range(1000):
     W1 = DeltaSGD(W1, X, D)
     W2 = DeltaBatch(W2, X, D)
-    
+
     es1 = 0
     es2 = 0
     N   = 4
     for k in range(N):
         x = X[k, :].T
         d = D[k]
-        
+
         v1 = np.matmul(W1, x)
         y1 = Sigmoid(v1)
         es1 = es1 + (d - y1)**2
-        
+
         v2 = np.matmul(W2, x)
         y2 = Sigmoid(v2)
         es2 = es2 + (d - y2)**2
-        
+
     E1[epoch] = es1/N
     E2[epoch] = es2/N
-    
-    
+
+
 SGD,   = plt.plot(E1, 'r')
 Batch, = plt.plot(E2, 'b:')
 plt.xlabel("Epoch")

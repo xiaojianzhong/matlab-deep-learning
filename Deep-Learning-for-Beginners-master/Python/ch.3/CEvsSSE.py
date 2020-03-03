@@ -28,7 +28,7 @@ for _epoch in range(1000):
     W21, W22 = BackpropXOR(W21, W22, X, D)
 
     es1 = 0
-    es2 = 0 
+    es2 = 0
     N   = 4
     for k in range(N):
         x = X[k, :].T
@@ -39,16 +39,16 @@ for _epoch in range(1000):
         v   = np.matmul(W12, y1)
         y   = Sigmoid(v)
         es1 = es1 + (d - y)**2
-        
+
         v1  = np.matmul(W21, x)
         y1  = Sigmoid(v1)
         v   = np.matmul(W22, y1)
         y   = Sigmoid(v)
         es2 = es2 + (d - y)**2
-        
+
     E1[_epoch] = es1 / N
     E2[_epoch] = es2 / N
-    
+
 
 CE,  = plt.plot(E1, 'r')
 SSE, = plt.plot(E2, 'b:')
