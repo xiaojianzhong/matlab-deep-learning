@@ -1,16 +1,22 @@
-# Apress Source Code
+# 《MATLAB Deep Learning》源代码
 
-This repository accompanies [*MATLAB Deep Learning*](http://www.apress.com/9781484228449) by Phil Kim (Apress, 2017).
+本仓库是书籍《MATLAB Deep Learning》（Phil Kim 攥写）的示例源代码，克隆至 [Apress/matlab-deep-learning](https://github.com/Apress/matlab-deep-learning)。
 
-[comment]: #cover
+查看原始 README 请[点击](./README_EN.md)。
 
+## 说明
 
-Download the files as a zip using the green button, or clone the repository to your machine using Git.
+原仓库提供了 Matlab 与 Python 支持，我加入了相应的 Go 与 R 语言示例，其中：
 
-## Releases
+* Matlab 代码在 `Deep-Learning-for-Beginners-master/` 目录下
+* Python 代码在 `Deep-Learning-for-Beginners-master/Python/` 目录下
+* Go 代码在 `Deep-Learning-for-Beginners-master/Go/` 目录下
+* R 代码在 `Deep-Learning-for-Beginners-master/R/` 目录下
 
-Release v1.0 corresponds to the code in the published book, without corrections or updates.
+## 发布
 
-## Contributions
+[v1.0](https://github.com/azxj/matlab-deep-learning/releases/tag/v1.0) 版为书籍原版源代码，未经任何修正或更新。
 
-See the file Contributing.md for more information on how you can contribute to this repository.
+## 贡献
+
+详见 [contributing.md](./contributing.md)。
