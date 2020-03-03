@@ -1,3 +1,6 @@
+source('./ReLU.R')
+source('./Softmax.R')
+
 DeepReLU <- function(W1, W2, W3, W4, X, D) {
   alpha <- 0.01
 

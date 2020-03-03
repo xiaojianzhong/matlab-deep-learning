@@ -1,3 +1,5 @@
+source('./Sigmoid.R')
+
 BackpropXOR <- function(W1, W2, X, D) {
   alpha <- 0.9
 
