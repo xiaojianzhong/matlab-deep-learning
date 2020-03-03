@@ -6,7 +6,7 @@
 
 ## 说明
 
-原仓库提供了 Matlab 与 Python 支持，我加入了相应的 Go 与 R 语言示例，其中：
+原仓库提供了 Matlab 与 Python 支持，我加入了相应的 Go 与 R 语言示例，同时对代码进行了格式化，其中：
 
 * Matlab 代码在 `Deep-Learning-for-Beginners-master/Matlab/` 目录下
 * Python 代码在 `Deep-Learning-for-Beginners-master/Python/` 目录下
