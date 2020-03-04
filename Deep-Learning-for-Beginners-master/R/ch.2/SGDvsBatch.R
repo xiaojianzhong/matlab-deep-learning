@@ -1,6 +1,6 @@
-source('./DeltaSGD.R')
-source('./DeltaBatch.R')
-source('./Sigmoid.R')
+source("./DeltaSGD.R")
+source("./DeltaBatch.R")
+source("./Sigmoid.R")
 
 X <- matrix(c(
   0, 0, 1,

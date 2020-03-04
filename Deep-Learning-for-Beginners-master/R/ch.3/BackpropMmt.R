@@ -1,4 +1,4 @@
-source('./Sigmoid.R')
+source("./Sigmoid.R")
 
 BackpropMmt <- function(W1, W2, X, D) {
   alpha <- 0.9

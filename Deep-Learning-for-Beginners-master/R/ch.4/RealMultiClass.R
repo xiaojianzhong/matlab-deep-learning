@@ -1,6 +1,6 @@
-source('./TestMultiClass.R')
-source('./Sigmoid.R')
-source('./Softmax.R')
+source("./TestMultiClass.R")
+source("./Sigmoid.R")
+source("./Softmax.R")
 
 X <- array(
   cbind(

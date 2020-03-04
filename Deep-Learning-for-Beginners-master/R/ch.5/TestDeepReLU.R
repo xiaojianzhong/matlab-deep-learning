@@ -1,6 +1,6 @@
-source('./DeepReLU.R')
-source('./ReLU.R')
-source('./Softmax.R')
+source("./DeepReLU.R")
+source("./ReLU.R")
+source("./Softmax.R")
 
 X <- array(
   cbind(

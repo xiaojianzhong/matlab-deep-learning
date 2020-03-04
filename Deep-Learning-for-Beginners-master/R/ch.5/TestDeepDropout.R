@@ -1,6 +1,6 @@
-source('./DeepDropout.R')
-source('./Sigmoid.R')
-source('./Softmax.R')
+source("./DeepDropout.R")
+source("./Sigmoid.R")
+source("./Softmax.R")
 
 X <- array(
   cbind(

@@ -1,4 +1,4 @@
-source('./DeltaXOR.R')
+source("./DeltaXOR.R")
 
 X <- matrix(c(
   0, 0, 1,
