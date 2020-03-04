@@ -7,7 +7,7 @@ DeepDropout <- function(W1, W2, W3, W4, X, D) {
 
   N <- 5
   for (k in 1:N) {
-    x <- as.vector(t(X[[k]]))
+    x <- as.vector(t(X[, , k]))
     v1 <- W1 %*% x
     y1 <- Sigmoid(v1)
     y1 <- y1 * Dropout(y1, 0.2)
