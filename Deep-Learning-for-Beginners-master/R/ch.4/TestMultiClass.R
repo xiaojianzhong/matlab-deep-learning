@@ -1,7 +1,7 @@
-source('./rng.R')
-source('./MultiClass.R')
-source('./Sigmoid.R')
-source('./Softmax.R')
+source("./rng.R")
+source("./MultiClass.R")
+source("./Sigmoid.R")
+source("./Softmax.R")
 
 rng(3)
 
