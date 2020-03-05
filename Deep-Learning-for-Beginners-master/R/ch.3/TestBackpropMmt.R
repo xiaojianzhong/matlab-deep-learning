@@ -1,5 +1,5 @@
-source('./BackpropMmt.R')
-source('./Sigmoid.R')
+source("./BackpropMmt.R")
+source("./Sigmoid.R")
 
 X <- matrix(c(
   0, 0, 1,

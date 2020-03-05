@@ -1,6 +1,6 @@
-source('./BackpropCE.R')
-source('./BackpropXOR.R')
-source('./Sigmoid.R')
+source("./BackpropCE.R")
+source("./BackpropXOR.R")
+source("./Sigmoid.R")
 
 X <- matrix(c(
   0, 0, 1,

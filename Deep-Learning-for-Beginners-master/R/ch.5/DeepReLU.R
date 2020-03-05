@@ -1,12 +1,12 @@
-source('./ReLU.R')
-source('./Softmax.R')
+source("./ReLU.R")
+source("./Softmax.R")
 
 DeepReLU <- function(W1, W2, W3, W4, X, D) {
   alpha <- 0.01
 
   N <- 5
   for (k in 1:N) {
-    x <- as.vector(t(X[[k]]))
+    x <- as.vector(t(X[, , k]))
     v1 <- W1 %*% x
     y1 <- ReLU(v1)
 

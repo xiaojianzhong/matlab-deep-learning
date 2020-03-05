@@ -1,4 +1,4 @@
-source('./Sigmoid.R')
+source("./Sigmoid.R")
 
 DeltaSGD <- function(W, X, D) {
   alpha <- 0.9

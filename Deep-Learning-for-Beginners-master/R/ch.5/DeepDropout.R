@@ -1,13 +1,13 @@
-source('./Sigmoid.R')
-source('./Dropout.R')
-source('./Softmax.R')
+source("./Sigmoid.R")
+source("./Dropout.R")
+source("./Softmax.R")
 
 DeepDropout <- function(W1, W2, W3, W4, X, D) {
   alpha <- 0.01
 
   N <- 5
   for (k in 1:N) {
-    x <- as.vector(t(X[[k]]))
+    x <- as.vector(t(X[, , k]))
     v1 <- W1 %*% x
     y1 <- Sigmoid(v1)
     y1 <- y1 * Dropout(y1, 0.2)

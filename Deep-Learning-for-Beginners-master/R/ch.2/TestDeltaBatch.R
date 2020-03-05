@@ -1,4 +1,4 @@
-source('./DeltaBatch.R')
+source("./DeltaBatch.R")
 
 X <- matrix(c(
   0, 0, 1,

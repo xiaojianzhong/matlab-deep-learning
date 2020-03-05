@@ -1,12 +1,12 @@
-source('./Sigmoid.R')
-source('./Softmax.R')
+source("./Sigmoid.R")
+source("./Softmax.R")
 
 MultiClass <- function(W1, W2, X, D) {
   alpha <- 0.9
 
   N <- 5
   for (k in 1:N) {
-    x <- as.vector(t(X[[k]]))
+    x <- as.vector(t(X[, , k]))
     d <- D[k,]
 
     v1 <- W1 %*% x
