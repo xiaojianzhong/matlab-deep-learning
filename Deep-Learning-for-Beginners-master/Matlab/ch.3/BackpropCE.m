@@ -1,4 +1,4 @@
-% BackpropCE 函数在一次 epoch 中，基于随机梯度下降策略，使用反向传播算法，通过训练数据集对权重进行更新。
+% BackpropCE 函数基于随机梯度下降策略，使用反向传播算法，通过训练数据集对权重进行更新。
 % 与前面不同的是，这里在输出层使用了 cross entropy 作为损失函数。
 % 关于 cross entropy 的更多信息，可以参考 https://en.wikipedia.org/wiki/Cross_entropy。
 %
