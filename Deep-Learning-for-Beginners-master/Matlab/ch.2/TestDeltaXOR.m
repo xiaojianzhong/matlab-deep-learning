@@ -1,3 +1,6 @@
+% 该文件对 DeltaXOR 函数进行了测试。
+% 这里是为了说明 single-layer neural network 并不适用于非线性可解的问题（如 XOR 问题）。
+
 clear all
 
 X = [ 0 0 1;
@@ -10,17 +13,21 @@ D = [ 0
       1
       1
       0
-    ];
+    ]; % 注意这里的训练数据标签发生了变化
 
-W = 2*rand(1, 3) - 1;
+W = 2*rand(1, 3) - 1; % 随机初始化权重参数
+                      % 每个元素的值在 -1 到 1 之间
 
-for epoch = 1:40000           % train
+% 训练模型
+% 注意这里使用了 40000 次迭代（之前是 10000 次），是为了证明并不是迭代次数少引起的问题
+for epoch = 1:40000
   W = DeltaXOR(W, X, D);
 end
 
-N = 4;                        % inference
+% 使用模型进行预测
+N = 4;
 for k = 1:N
   x = X(k, :)';
   v = W*x;
-  y = Sigmoid(v)
+  y = Sigmoid(v) % 从输出结果可以看到，预测值与真实值相去甚远
 end
