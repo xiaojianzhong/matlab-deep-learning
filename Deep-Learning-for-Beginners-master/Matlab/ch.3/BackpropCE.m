@@ -31,7 +31,7 @@ function [W1, W2] = BackpropCE(W1, W2, X, D)
     e     = d - y; % 输出层的 e
                    % 标量
     delta = e; % 输出层的 delta
-               % 这里由于同时使用了 Sigmoid 激活函数和 cross entropy 损失函数，所以 delta = e，详见《Matlab Deep Learning》P75
+               % 这里由于同时使用了 sigmoid 激活函数和 cross entropy 损失函数，所以 delta = e，详见《Matlab Deep Learning》P75
                % 标量
 
     e1     = W2'*delta; % 隐藏层的 e

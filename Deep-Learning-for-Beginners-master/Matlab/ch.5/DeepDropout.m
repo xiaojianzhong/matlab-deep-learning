@@ -52,7 +52,7 @@ function [W1, W2, W3, W4] = DeepDropout(W1, W2, W3, W4, X, D)
     e     = d - y; % 输出层的 e
                    % 5x1 矩阵（5 维向量）
     delta = e; % 输出层的 delta
-               % 这里由于同时使用了 Softmax 激活函数和 cross entropy 损失函数，所以 delta = e，详见《Matlab Deep Learning》P95
+               % 这里由于同时使用了 softmax 激活函数和 cross entropy 损失函数，所以 delta = e，详见《Matlab Deep Learning》P95
                % 5x1 矩阵（5 维向量）
 
     e3     = W4'*delta; % 隐藏层 3 的 e
