@@ -1,3 +1,6 @@
+% 该文件对 BackpropXOR 函数进行了测试。
+% 这里同时说明了 multi-layer neural network 可以解决非线性可解的问题（如 XOR 问题）。
+
 clear all
 
 X = [ 0 0 1;
@@ -10,16 +13,20 @@ D = [ 0
       1
       1
       0
-    ];
+    ]; % XOR 问题
 
-W1 = 2*rand(4, 3) - 1;
-W2 = 2*rand(1, 4) - 1;
+W1 = 2*rand(4, 3) - 1; % 随机初始化权重参数
+                       % 每个元素的值在 -1 到 1 之间
+W2 = 2*rand(1, 4) - 1; % 随机初始化权重参数
+                       % 每个元素的值在 -1 到 1 之间
 
-for epoch = 1:10000           % train
+% 训练模型
+for epoch = 1:10000
   [W1 W2] = BackpropXOR(W1, W2, X, D);
 end
 
-N = 4;                        % inference
+% 使用模型进行预测
+N = 4;
 for k = 1:N
   x  = X(k, :)';
   v1 = W1*x;
