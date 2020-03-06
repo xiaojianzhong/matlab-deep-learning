@@ -8,4 +8,5 @@
 - [TestDeltaBatch.m](./TestDeltaBatch.m) 测试了 [DeltaBatch.m](./DeltaBatch.m)。
 - [DeltaXOR.m](./DeltaXOR.m) 与 [DeltaSGD.m](./DeltaSGD.m) 内容相同。
 - [TestDeltaSGD.m](./TestDeltaSGD.m) 说明了为何 single-layer neural network 不适用于非线性可解的问题（这里用 XOR 问题说明）。
+- [SGDvsBatch.m](./SGDvsBatch.m) 比较了随机梯度下降方法与 batch 化随机梯度下降方法的性能表现。
 - [Sigmoid.m](./Sigmoid.m) 定义了 `Sigmoid` 函数。
