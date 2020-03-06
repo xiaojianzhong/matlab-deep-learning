@@ -38,7 +38,7 @@ function [W1, W2] = BackpropXOR(W1, W2, X, D)
 
     dW1 = alpha*delta1*x'; % 输入-隐藏权重参数的更新值
                            % 注意这里将 x 进行了转置，将列向量转换为行向量
-                           % 4x3 矩阵（[4x1] x [1x3] = [4x3]）
+                           % 4x3 矩阵（[4x1] x [3x1]' = [4x3]）
     W1  = W1 + dW1; % dW1 和 W1 的形状相同
 
     dW2 = alpha*delta*y1'; % 隐藏-输出权重参数的更新值
