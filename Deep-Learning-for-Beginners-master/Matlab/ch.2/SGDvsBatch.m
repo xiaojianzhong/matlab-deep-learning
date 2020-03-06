@@ -16,9 +16,9 @@ D = [ 0
     ];
 
 
-E1 = zeros(1000, 1); % SGD 方法中每个 epoch 的错误率统计
+E1 = zeros(1000, 1); % SGD 方法中每个 epoch 的损失函数值统计
                      % 1000x1 矩阵（1000 维向量）
-E2 = zeros(1000, 1); % batch-SGD 方法中每个 epoch 的错误率统计
+E2 = zeros(1000, 1); % batch-SGD 方法中每个 epoch 的损失函数值统计
                      % 1000x1 矩阵（1000 维向量）
 
 W1 = 2*rand(1, 3) - 1; % 随机初始化权重参数
@@ -40,7 +40,7 @@ for epoch = 1:1000
 
     v1  = W1*x;
     y1  = Sigmoid(v1);
-    es1 = es1 + (d - y1)^2; % 这里使用了 L2 损失，因为 L2 损失的平方化凸显了性能差异
+    es1 = es1 + (d - y1)^2; % L2 损失函数
 
     v2  = W2*x;
     y2  = Sigmoid(v2);

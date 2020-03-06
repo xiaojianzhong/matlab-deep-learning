@@ -21,7 +21,7 @@ function W = DeltaXOR(W, X, D)
     y = Sigmoid(v); % 输出层的激活值
                     % 标量
 
-    e     = d - y; % 输出层的损失值
+    e     = d - y; % 输出层的 e
                    % 标量
     delta = y*(1-y)*e; % 输出层的 delta，其中 y*(1-y) 是 sigmoid 函数的导数
                        % 标量
