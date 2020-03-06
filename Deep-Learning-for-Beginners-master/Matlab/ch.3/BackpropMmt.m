@@ -42,13 +42,13 @@ function [W1, W2] = BackpropMmt(W1, W2, X, D)
     delta1 = y1.*(1-y1).*e1; % 隐藏层的 delta，其中 y*(1-y) 是 sigmoid 函数的导数
                              % 4x1 矩阵（4 维向量）
 
-    dW1  = alpha*delta1*x'; % 输入-隐藏权重参数的更新值
+    dW1  = alpha*delta1*x'; % 输入层-隐藏层权重参数的更新值
                             % 注意这里将 x 进行了转置，将列向量转换为行向量
                             % 4x3 矩阵（[4x1] x [3x1]' = [4x3]）
     mmt1 = dW1 + beta*mmt1; % 更新动量
     W1   = W1 + mmt1; % mmt1 和 W1 的形状相同
 
-    dW2  = alpha*delta*y1'; % 隐藏-输出权重参数的更新值
+    dW2  = alpha*delta*y1'; % 隐藏层-输出层权重参数的更新值
                             % 注意这里将 y1 进行了转置，将列向量转换为行向量
                             % 1x4 矩阵
     mmt2 = dW2 + beta*mmt2; % 更新动量

@@ -29,15 +29,15 @@ function W = DeltaBatch(W, X, D)
     delta = y*(1-y)*e; % 输出层的 delta，其中 y*(1-y) 是 sigmoid 函数的导数
                        % 标量
 
-    dW = alpha*delta*x; % 权重参数的更新值
+    dW = alpha*delta*x; % 输入层-输出层权重参数的更新值
                         % 3 维向量
 
     dWsum = dWsum + dW;
   end
-  dWavg = dWsum / N; % 权重参数更新值的平均值
+  dWavg = dWsum / N; % 输入层-输出层权重参数更新值的平均值
                      % 3x1 矩阵（3 维向量）
 
-  % 使用平均值来更新权重参数
+  % 使用平均值来更新输入层-输出层权重参数
   % 由于 W 是 1x3 矩阵，而 dW 是 3x1 矩阵，故不能直接执行 W = W + dW
   W(1) = W(1) + dWavg(1);
   W(2) = W(2) + dWavg(2);

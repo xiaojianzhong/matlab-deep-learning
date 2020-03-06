@@ -27,10 +27,10 @@ function W = DeltaXOR(W, X, D)
     delta = y*(1-y)*e; % 输出层的 delta，其中 y*(1-y) 是 sigmoid 函数的导数
                        % 标量
 
-    dW = alpha*delta*x; % 权重参数的更新值
+    dW = alpha*delta*x; % 输入层-输出层权重参数的更新值
                         % 3 维向量
 
-    % 更新权重参数
+    % 更新输入层-输出层权重参数
     % 由于 W 是 1x3 矩阵，而 dW 是 3x1 矩阵，故不能直接执行 W = W + dW
     W(1) = W(1) + dW(1);
     W(2) = W(2) + dW(2);
