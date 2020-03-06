@@ -11,8 +11,8 @@ function y = Conv(x, W)
   [wrow, wcol, numFilters] = size(W); % wrow，wcol 分别为过滤器的行数和列数，numFilters 为过滤器的数量
   [xrow, xcol, ~         ] = size(x); % xrow，xcol 分别为图像的行数和列数
 
-  yrow = xrow - wrow + 1; % yrow 为 feature map 的行数，由卷积理论可知其值为：
-  ycol = xcol - wcol + 1; % ycol 为 feature map 的列数，由卷积理论可知其值为：
+  yrow = xrow - wrow + 1; % yrow 为 feature map 的行数，由卷积理论可知其值为：(xrow - wrow) / step + 1，在这里 step 的值为 1
+  ycol = xcol - wcol + 1; % ycol 为 feature map 的列数，由卷积理论可知其值为：(xcol - wcol) / step + 1，在这里 step 的值为 1
 
   y = zeros(yrow, ycol, numFilters); % feature map 第三维的大小应该等于过滤器的数量
 
