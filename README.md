@@ -8,10 +8,10 @@
 
 原仓库提供了 Matlab 与 Python 支持，我加入了相应的 Go 与 R 语言示例，对代码进行了格式化，同时加入了相应的**中文**注释与**中文**说明文档，其中：
 
-* Matlab 代码在 `Deep-Learning-for-Beginners-master/Matlab/` 目录下，包含有**中文**注释和**中文**说明文档（在每一章节目录下）
-* Python 代码在 `Deep-Learning-for-Beginners-master/Python/` 目录下
-* Go 代码在 `Deep-Learning-for-Beginners-master/Go/` 目录下
-* R 代码在 `Deep-Learning-for-Beginners-master/R/` 目录下
+* Matlab 代码在 [`Deep-Learning-for-Beginners-master/Matlab/`](./Deep-Learning-for-Beginners-master/Matlab/) 目录下，包含有**中文**注释和**中文**说明文档（在每一章节目录下）
+* Python 代码在 [`Deep-Learning-for-Beginners-master/Python/`](./Deep-Learning-for-Beginners-master/Python/) 目录下
+* Go 代码在 [`Deep-Learning-for-Beginners-master/Go/`](./Deep-Learning-for-Beginners-master/Go/) 目录下
+* R 代码在 [`Deep-Learning-for-Beginners-master/R/`](./Deep-Learning-for-Beginners-master/R/) 目录下
 
 ## 分支
 
