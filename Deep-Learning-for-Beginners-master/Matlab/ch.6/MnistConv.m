@@ -123,6 +123,6 @@ function [W1, W5, Wo] = MnistConv(W1, W5, Wo, X, D)
     W5        = W5 + momentum5; % momentum5 和 W5 的形状相同
 
     momentumo = alpha*dWo + beta*momentumo; % 更新动量
-    Wo        = Wo + momentumo; % momentum5 和 W5 的形状相同
+    Wo        = Wo + momentumo; % momentumo 和 Wo 的形状相同
   end
 end
