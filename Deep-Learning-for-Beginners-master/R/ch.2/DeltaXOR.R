@@ -16,7 +16,9 @@ DeltaXOR <- function(W, X, D) {
 
     dW <- alpha * delta * x # delta rule
 
-    W <- W + dW
+    W[1] <- W[1] + dW[1]
+    W[2] <- W[2] + dW[2]
+    W[3] <- W[3] + dW[3]
   }
 
   return(W)
