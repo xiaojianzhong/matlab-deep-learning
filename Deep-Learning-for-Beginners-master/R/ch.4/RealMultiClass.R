@@ -47,7 +47,7 @@ X <- array(
 
 N <- 5 # inference
 for (k in 1:N) {
-  x <- as.vector(t(X[, , k]))
+  x <- as.vector(X[, , k])
   v1 <- W1 %*% x
   y1 <- Sigmoid(v1)
   v <- W2 %*% y1

@@ -68,7 +68,7 @@ for (epoch in 1:10000) { # train
 
 N <- 5 # inference
 for (k in 1:N) {
-  x <- as.vector(t(X[, , k]))
+  x <- as.vector(X[, , k])
   v1 <- W1 %*% x
   y1 <- Sigmoid(v1)
 
