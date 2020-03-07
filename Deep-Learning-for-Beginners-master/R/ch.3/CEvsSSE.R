@@ -16,8 +16,8 @@ D <- c(
   1
 )
 
-E1 <- vector(mode="numeric", length=1000)
-E2 <- vector(mode="numeric", length=1000)
+E1 <- array(0, c(1000, 1))
+E2 <- array(0, c(1000, 1))
 
 W11 <- matrix(runif(12, min=-1, max=1), nrow=4, ncol=3) # Cross entropy
 W12 <- matrix(runif(4, min=-1, max=1), nrow=1, ncol=4)

@@ -3,7 +3,7 @@ source("./Sigmoid.R")
 DeltaBatch <- function(W, X, D) {
   alpha <- 0.9
 
-  dWsum <- vector(mode="numeric", length=3)
+  dWsum <- array(0, c(3, 1))
 
   N <- 4
   for (k in 1:N) {
