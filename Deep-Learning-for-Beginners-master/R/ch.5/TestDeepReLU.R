@@ -53,10 +53,10 @@ D <- matrix(c(
   0, 0, 0, 0, 1
 ), nrow=5, ncol=5, byrow=TRUE)
 
-W1 <- matrix(runif(500, min=-1, max=1), nrow=20, ncol=25)
-W2 <- matrix(runif(400, min=-1, max=1), nrow=20, ncol=20)
-W3 <- matrix(runif(400, min=-1, max=1), nrow=20, ncol=20)
-W4 <- matrix(runif(100, min=-1, max=1), nrow=5, ncol=20)
+W1 <- array(runif(500, min=-1, max=1), c(20, 25))
+W2 <- array(runif(400, min=-1, max=1), c(20, 20))
+W3 <- array(runif(400, min=-1, max=1), c(20, 20))
+W4 <- array(runif(100, min=-1, max=1), c(5, 20))
 
 for (epoch in 1:10000) { # train
   Ws <- DeepReLU(W1, W2, W3, W4, X, D)
