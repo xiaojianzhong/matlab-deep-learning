@@ -4,8 +4,8 @@ BackpropMmt <- function(W1, W2, X, D) {
   alpha <- 0.9
   beta <- 0.9
 
-  mmt1 <- matrix(0, nrow=dim(W1)[1], ncol=dim(W1)[2])
-  mmt2 <- matrix(0, nrow=dim(W2)[1], ncol=dim(W2)[2])
+  mmt1 <- array(0, dim(W1))
+  mmt2 <- array(0, dim(W2))
 
   N <- 4
   for (k in 1:N) {

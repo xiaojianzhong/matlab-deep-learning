@@ -1,3 +1,5 @@
+rm(list=ls())
+
 source("./DeltaSGD.R")
 source("./DeltaBatch.R")
 source("./Sigmoid.R")
@@ -16,10 +18,10 @@ D <- c(
   1
 )
 
-E1 <- vector(mode="numeric", length=1000)
-E2 <- vector(mode="numeric", length=1000)
+E1 <- array(0, c(1000, 1))
+E2 <- array(0, c(1000, 1))
 
-W1 <- matrix(runif(3, min=-1, max=1), nrow=1, ncol=3)
+W1 <- array(runif(3, min=-1, max=1), c(1, 3))
 W2 <- W1
 
 for (epoch in 1:1000) { # train

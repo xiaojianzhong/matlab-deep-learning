@@ -6,7 +6,7 @@ MultiClass <- function(W1, W2, X, D) {
 
   N <- 5
   for (k in 1:N) {
-    x <- as.vector(t(X[, , k]))
+    x <- as.vector(X[, , k])
     d <- D[k,]
 
     v1 <- W1 %*% x
