@@ -1,3 +1,5 @@
+rm(list=ls())
+
 source("./DeltaSGD.R")
 
 X <- matrix(c(

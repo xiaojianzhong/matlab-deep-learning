@@ -1,3 +1,5 @@
+rm(list=ls())
+
 source("./DeepReLU.R")
 source("./ReLU.R")
 source("./Softmax.R")

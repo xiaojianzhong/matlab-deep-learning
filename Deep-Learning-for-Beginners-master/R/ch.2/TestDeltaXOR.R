@@ -1,3 +1,5 @@
+rm(list=ls())
+
 source("./DeltaXOR.R")
 
 X <- matrix(c(

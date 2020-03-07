@@ -1,3 +1,5 @@
+rm(list=ls())
+
 source("./BackpropXOR.R")
 source("./Sigmoid.R")
 

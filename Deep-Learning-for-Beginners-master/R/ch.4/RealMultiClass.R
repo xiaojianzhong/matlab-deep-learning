@@ -1,3 +1,5 @@
+rm(list=ls())
+
 source("./TestMultiClass.R")
 source("./Sigmoid.R")
 source("./Softmax.R")

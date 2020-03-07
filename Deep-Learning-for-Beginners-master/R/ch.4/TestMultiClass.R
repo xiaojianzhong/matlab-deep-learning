@@ -1,3 +1,5 @@
+rm(list=ls())
+
 source("./rng.R")
 source("./MultiClass.R")
 source("./Sigmoid.R")

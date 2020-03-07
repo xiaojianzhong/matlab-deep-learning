@@ -1,3 +1,5 @@
+rm(list=ls())
+
 source("./DeepDropout.R")
 source("./Sigmoid.R")
 source("./Softmax.R")

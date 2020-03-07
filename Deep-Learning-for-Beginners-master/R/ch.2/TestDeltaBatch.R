@@ -1,3 +1,5 @@
+rm(list=ls())
+
 source("./DeltaBatch.R")
 
 X <- matrix(c(
