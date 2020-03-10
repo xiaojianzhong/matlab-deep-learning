@@ -20,6 +20,14 @@
 * [`golang-r-support`](https://github.com/azxj/matlab-deep-learning/tree/golang-r-support) 分支合并了 `golang-support` 分支与 `r-support` 分支的内容。
 * [`master`](https://github.com/azxj/matlab-deep-learning/tree/master) 分支合并了 `golang-r-support` 分支的内容，对原仓库中 Matlab 与 Python 的代码进行了格式化，同时在 Matlab 代码中加入了相应的**中文**注释和**中文**说明文档。
 
+## 关于中文注释
+
+我为《Matlab Deep Learning》中出现的 Matlab 代码添加了中文注释，样式如下图：
+
+![Matlab 注释示例图](./asset/matlab-comment-example.png)
+
+希望可以帮助你更好地理解书中的代码。
+
 ## 发布
 
 [v1.0](https://github.com/azxj/matlab-deep-learning/releases/tag/v1.0) 版为书籍原版源代码，未经任何修正或更新。
