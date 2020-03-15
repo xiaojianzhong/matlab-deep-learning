@@ -1,3 +1,5 @@
+rm(list=ls())
+
 source("./BackpropXOR.R")
 source("./Sigmoid.R")
 
@@ -15,8 +17,8 @@ D <- c(
   0
 )
 
-W1 <- matrix(runif(12, min=-1, max=1), nrow=4, ncol=3)
-W2 <- matrix(runif(4, min=-1, max=1), nrow=1, ncol=4)
+W1 <- array(runif(12, min=-1, max=1), c(4, 3))
+W2 <- array(runif(4, min=-1, max=1), c(1, 4))
 
 for (epoch in 1:10000) { # train
   Ws <- BackpropXOR(W1, W2, X, D)

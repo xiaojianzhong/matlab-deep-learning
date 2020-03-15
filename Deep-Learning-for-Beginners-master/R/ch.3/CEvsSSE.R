@@ -1,3 +1,5 @@
+rm(list=ls())
+
 source("./BackpropCE.R")
 source("./BackpropXOR.R")
 source("./Sigmoid.R")
@@ -16,11 +18,11 @@ D <- c(
   1
 )
 
-E1 <- vector(mode="numeric", length=1000)
-E2 <- vector(mode="numeric", length=1000)
+E1 <- array(0, c(1000, 1))
+E2 <- array(0, c(1000, 1))
 
-W11 <- matrix(runif(12, min=-1, max=1), nrow=4, ncol=3) # Cross entropy
-W12 <- matrix(runif(4, min=-1, max=1), nrow=1, ncol=4)
+W11 <- array(runif(12, min=-1, max=1), c(4, 3)) # Cross entropy
+W12 <- array(runif(4, min=-1, max=1), c(1, 4))
 W21 <- W11 # Sum of squared error
 W22 <- W12
 

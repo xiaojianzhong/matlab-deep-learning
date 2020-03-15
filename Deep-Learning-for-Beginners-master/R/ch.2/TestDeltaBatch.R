@@ -1,3 +1,5 @@
+rm(list=ls())
+
 source("./DeltaBatch.R")
 
 X <- matrix(c(
@@ -14,7 +16,7 @@ D <- c(
   1
 )
 
-W <- matrix(runif(3, min=-1, max=1), nrow=1, ncol=3)
+W <- array(runif(3, min=-1, max=1), c(1, 3))
 
 for (epoch in 1:40000) {
   W <- DeltaBatch(W, X, D)
