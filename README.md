@@ -71,7 +71,8 @@ end
 
 ## 发布
 
-[v1.0](https://github.com/azxj/matlab-deep-learning/releases/tag/v1.0) 版为书籍原版源代码，未经任何修正或更新。
+- [v1.0](https://github.com/azxj/matlab-deep-learning/releases/tag/v1.0) 版为书籍原版源代码，未经任何修正或更新。
+- [v2.0](https://github.com/azxj/matlab-deep-learning/releases/tag/v2.0) 版为 2020-3-25 更新的版本。
 
 ## 贡献
 
