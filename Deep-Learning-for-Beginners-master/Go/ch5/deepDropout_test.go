@@ -61,7 +61,7 @@ func TestDeepDropout(t *testing.T) {
 	})) // 5 x 20 matrix
 
 	// train
-	for epoch := 0; epoch < 10000; epoch++ {
+	for epoch := 0; epoch < 20000; epoch++ {
 		DeepDropout(wss1, wss2, wss3, wss4, xss, dss)
 	}
 
