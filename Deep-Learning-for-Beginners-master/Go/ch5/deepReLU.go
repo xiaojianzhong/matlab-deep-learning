@@ -1,7 +1,7 @@
 package ch5
 
 import (
-	"github.com/azxj/matlab-deep-learning/Deep-Learning-for-Beginners-master/Go/utils"
+	"github.com/xiaojianzhong/matlab-deep-learning/Deep-Learning-for-Beginners-master/Go/utils"
 	"gonum.org/v1/gonum/mat"
 )
 

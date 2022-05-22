@@ -15,10 +15,10 @@
 
 ## 分支
 
-* [`golang-support`](https://github.com/azxj/matlab-deep-learning/tree/golang-support) 分支仅包含新增的 Go 语言支持内容。
-* [`r-support`](https://github.com/azxj/matlab-deep-learning/tree/r-support) 分支仅包含新增的 R 语言支持内容。
-* [`golang-r-support`](https://github.com/azxj/matlab-deep-learning/tree/golang-r-support) 分支合并了 `golang-support` 分支与 `r-support` 分支的内容。
-* [`master`](https://github.com/azxj/matlab-deep-learning/tree/master) 分支合并了 `golang-r-support` 分支的内容，对原仓库中 Matlab 与 Python 的代码进行了格式化，同时在 Matlab 代码中加入了相应的**中文**注释和**中文**说明文档。
+* [`golang-support`](https://github.com/xiaojianzhong/matlab-deep-learning/tree/golang-support) 分支仅包含新增的 Go 语言支持内容。
+* [`r-support`](https://github.com/xiaojianzhong/matlab-deep-learning/tree/r-support) 分支仅包含新增的 R 语言支持内容。
+* [`golang-r-support`](https://github.com/xiaojianzhong/matlab-deep-learning/tree/golang-r-support) 分支合并了 `golang-support` 分支与 `r-support` 分支的内容。
+* [`master`](https://github.com/xiaojianzhong/matlab-deep-learning/tree/master) 分支合并了 `golang-r-support` 分支的内容，对原仓库中 Matlab 与 Python 的代码进行了格式化，同时在 Matlab 代码中加入了相应的**中文**注释和**中文**说明文档。
 
 ## 关于中文注释
 
@@ -71,8 +71,8 @@ end
 
 ## 发布
 
-- [v1.0](https://github.com/azxj/matlab-deep-learning/releases/tag/v1.0) 版为书籍原版源代码，未经任何修正或更新。
-- [v2.0](https://github.com/azxj/matlab-deep-learning/releases/tag/v2.0) 版为 2020-3-25 更新的版本。
+- [v1.0](https://github.com/xiaojianzhong/matlab-deep-learning/releases/tag/v1.0) 版为书籍原版源代码，未经任何修正或更新。
+- [v2.0](https://github.com/xiaojianzhong/matlab-deep-learning/releases/tag/v2.0) 版为 2020-3-25 更新的版本。
 
 ## 贡献
 

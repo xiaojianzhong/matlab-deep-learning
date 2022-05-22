@@ -1,4 +1,4 @@
-module github.com/azxj/matlab-deep-learning/Deep-Learning-for-Beginners-master/Go
+module github.com/xiaojianzhong/matlab-deep-learning/Deep-Learning-for-Beginners-master/Go
 
 go 1.13
 
